@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    @model FizzBuzz_App.Models.fizzbuzzer
+    { Html.BeginForm("/Index", "Fizzbuzzer", FormMethod.Post); }
+    }
+
+<h2>FizzBuzz Web App</h2>
+
+
+    
+    <div class="form-group">
+        <label for="FirstNumber">Enter first number</label>
+        <input type="text" class="form-control" id="FirstNumber" name="FirstNumber" value=" @Model.FirstNumber" />
+
+        <label for="FirstNumber">Enter Second Number</label>
+        <input type="text" class="form-control" id="SecondNumber" name="SecondNumber" value=" @Model.SecondNumber" />
+    </div>
+
+   
+
+    <div class="form-group">
+        <label for="Result">Result</label>
+        <input type="text" class="form-control" id="Result" name="Result" value=" @Model.Result"/>
+    </div>
+
+    <button type="submit" class="btn btn-info" id="print" name="calculate">Calculate</button>
+
+
+
+
