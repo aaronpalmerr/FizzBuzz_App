@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Web;
 
@@ -10,8 +11,9 @@ namespace FizzBuzz_App.Models
 
         public int FirstNumber { get; set; }
         public int SecondNumber { get; set; }
-
         public String Result { get; set; }
+
+        
 
         public bool CheckSame()
         {
@@ -50,32 +52,34 @@ namespace FizzBuzz_App.Models
             
         }
 
-        public String FizzBuzz()
+        public void FizzBuzz()
         {
-            String fizz = "";
+            string answer = "";
 
             for (int i = FirstNumber; i <= SecondNumber; i++)
             {
                 if ((i % 3 == 0) && (i % 5 == 0)) 
                 {
-                    fizz += "FizzBuzz ";
+                    answer += "FizzBuzz \n";
                 }
                 else if (i % 3 == 0)
                 {
-                    fizz += "Fizz ";
+                    answer += "Fizz \n";
                 }
                 else if (i % 5 == 0)
                 {
-                    fizz += "Buzz ";
+                    answer += "Buzz \n";
                 }
                 else
                 {
-                    fizz += i + " ";
+                    answer += i + " \n";
                 }
 
             }
 
-            return fizz;
+            Result = answer;
+
+            
         }
 
 

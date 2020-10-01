@@ -19,9 +19,8 @@ namespace FizzBuzz_App.Controllers
         [HttpPost]
         public ActionResult Index(fizzbuzzer f)
           {
-            // create temp answer
-            String answer = "";
-
+            string answer = "";
+            
             // check if numbers are the same
             if (f.CheckSame() == true)
             {
@@ -31,30 +30,30 @@ namespace FizzBuzz_App.Controllers
             // check if numbers exceed boundaries
             else if (f.CheckBoundaries() == true)
             {
-                answer += "Please enter whole numbers between 1 and 100.";
+                answer += "Please enter whole numbers between 1 and 100."; 
+            }
+
+            // check that correction was made and execute code
+            else if (f.CheckOrder() == false)
+            {
+                f.FizzBuzz();
             }
 
             // check if reodering is needed
             else if (f.CheckOrder() == true)
             {
                 f.Reorder();
-                answer += f.FizzBuzz();
-
+                f.FizzBuzz();
             }
-
-            // check that correction was made and execute code
-            else if (f.CheckOrder() == false)
-            {
-                answer += f.FizzBuzz();
-            }
-
+            
             // check if a non-whole number is entered
             else
             {
                 answer += "Please enter a whole number.";
             }
 
-            f.Result = answer;
+            f.Result += answer;
+
             return View(f);
 
         }
