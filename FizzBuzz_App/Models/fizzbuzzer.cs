@@ -13,8 +13,6 @@ namespace FizzBuzz_App.Models
         public int SecondNumber { get; set; }
         public String Result { get; set; }
 
-        
-
         public bool CheckSame()
         {
             if (FirstNumber == SecondNumber) {

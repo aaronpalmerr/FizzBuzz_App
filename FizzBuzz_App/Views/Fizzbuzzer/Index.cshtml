@@ -5,22 +5,28 @@
     { Html.BeginForm("/Index", "Fizzbuzzer", FormMethod.Post); }
 }
 
-<h2 style="text-align:center;">FizzBuzz Web App</h2>
 
+@*<style>
+    body {
+        background-color: lightblue;
+    }
+</style>*@
 
-
-<div style="text-align:center;" class="form-group">
+<div class="form-group" align="center">
+    <h1>FizzBuzz Web App</h1>
     <label for="FirstNumber">Enter first number</label>
     <input type="text" class="form-control" id="FirstNumber" name="FirstNumber" value=" @Model.FirstNumber" />
 
     <label for="FirstNumber">Enter Second Number</label>
     <input type="text" class="form-control" id="SecondNumber" name="SecondNumber" value=" @Model.SecondNumber" />
+
+    <button type="submit" class="btn btn-info" id="print" name="calculate">Calculate</button>
+
+    <h3>Results</h3>
+    <p>@Model.Result</p>
 </div>
 
-<button type="submit" class="btn btn-info" id="print" name="calculate">Calculate</button>
 
-<h2>Results</h2>
-<p>@Model.Result</p>
 
 
 
