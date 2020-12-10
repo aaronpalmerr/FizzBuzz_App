@@ -22,13 +22,11 @@ body {
     overflow-x: hidden;
 }
 
-
     /* Side navigation links */
     .sidenav a {
         top: 0;
         color: white;
         background-color: #454545;
-
     }
 
 
@@ -39,6 +37,4 @@ body {
     color: white;
     margin-left: 500px;
     padding-left: 40px;
-
 }
-

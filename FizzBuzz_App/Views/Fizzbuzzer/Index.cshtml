@@ -15,35 +15,30 @@
         <label for="FirstNumber">First number</label>
         <input type="text" class="form-control" id="FirstNumber" name="FirstNumber" value=" @Model.FirstNumber" />
     </div>
-   
+
     <div>
         <label for="FirstNumber">Second number</label>
         <input type="text" class="form-control" id="SecondNumber" name="SecondNumber" value=" @Model.SecondNumber" />
     </div>
-   
+
     <div>
         <button type="submit" class="btn" id="print" name="calculate">FizzBuzz!</button>
     </div>
 
     <div>
         <p>
-            <br><b><u>Instructions: </b> </u> <br> <br>Enter two numbers between 1 and 100 and click the "FizzBuzz!" button. <br><br> The web app will then list those numbers and all numbers in between them. 
+            <br><b><u>Instructions: </b> </u> <br> <br>Enter two numbers between 1 and 100 and click the "FizzBuzz!" button. <br><br> The web app will then list those numbers and all numbers in between them.
             <br><br> However, if the number is a multiple of 3, the word "Fizz" will appear instead. For multiples of 5, the word "Buzz" will appear.
             For numbers that are both multiples of 3 and 5, the word "FizzBuzz" will appear.
         </p>
-        </div>
- 
+    </div>
+
 </div>
 
 <div class="content">
-
-    
-        <h1>Results</h1>
-    
-
-   
+    <h1>Results</h1>
     <p> <span style="white-space: pre-line">@Model.Result</span> </p>
-    
+
 </div>
 
 
