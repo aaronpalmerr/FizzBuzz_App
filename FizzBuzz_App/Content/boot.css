@@ -1,7 +1,44 @@
-﻿body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    color: white;
-    line-height: 1.42857143;
-    background-color: mediumseagreen;
+﻿* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #363636;
+}
+
+/* Style the side navigation */
+.sidenav {
+    padding: 30px;
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #002536;
+    overflow-x: hidden;
+}
+
+
+    /* Side navigation links */
+    .sidenav a {
+        top: 0;
+        color: white;
+        background-color: #454545;
+
+    }
+
+
+/* Style the content */
+.content {
+    top: 0;
+    padding: 0px;
+    color: white;
+    margin-left: 500px;
+    padding-left: 40px;
+
+}
+
